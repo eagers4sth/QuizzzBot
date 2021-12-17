@@ -70,7 +70,7 @@ def quiz_command(update: Update, context: CallbackContext) -> None:
             flag = 1
             break
     if flag:
-        update.message.reply_text('Вопросы кончились(')
+        update.message.reply_text('Вопросы кончились :(')
         return
     context.user_data['was'].append(i)
     update.message.reply_photo(image_data[i][0])
